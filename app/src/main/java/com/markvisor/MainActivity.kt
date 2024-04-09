@@ -7,7 +7,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ScrollState
@@ -168,7 +167,7 @@ class MainActivity : ComponentActivity() {
     ) {
         val hasUploadedImage = remember { mutableStateOf(false) }
         val launcher = rememberLauncherForActivityResult(
-            contract = ActivityResultContracts.GetContent(),
+            contract = GetImageContract(),
             onResult = { uri: Uri? ->
                 uri?.let {
                     onImageSelected(it)
@@ -188,7 +187,9 @@ class MainActivity : ComponentActivity() {
             } else {
                 stringResource(R.string.change_image)
             },
-        ) { launcher.launch("image/*") }
+        ) {
+            launcher.launch(arrayOf("image/jpeg", "image/png"))
+        }
     }
 
     @Composable
