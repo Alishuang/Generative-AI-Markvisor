@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Markvisor</string>
+    <string name="pick_image">選擇一張照片</string>
+    <string name="change_image">重新選擇一張照片</string>
+    <string name="default_tone">專業</string>
+    <string name="generate_content_prefix">"來吧! 創造 "</string>
+    <string name="generate_content_suffix">的文案</string>
+    <string name="regenerate">再試一次</string>
+</resources>

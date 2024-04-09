@@ -1,0 +1,14 @@
+#Android generated
+bin
+gen
+
+#gradle
+build/
+.gradle/
+
+#Other
+*.pyc
+.DS_Store
+tmp
+*~
+

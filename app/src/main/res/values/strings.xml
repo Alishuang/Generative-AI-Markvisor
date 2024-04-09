@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Markvisor</string>
+    <string name="pick_image">Pick a photo</string>
+    <string name="change_image">Choose another photo</string>
+    <string name="default_tone">Professional</string>
+    <string name="generate_content_prefix">Generate a product promotion with a </string>
+    <string name="generate_content_suffix">tone</string>
+    <string name="regenerate">Retry</string>
+</resources>
