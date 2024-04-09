@@ -2,6 +2,11 @@
 
 Markvisor is a demo app that demonstrates how it can generate engaging product promotions from images. It leverages the multimodal capabilities of Gemini 1.0 Pro Vision, driven by the powerful Gemini API.
 
+<div align="center">
+  <img src="screenshot/01.png" alt="dark theme" width="200"/>
+  <img src="screenshot/02.png" alt="light theme" width="200"/>
+</div>
+
 ## Setup
 
 Before using Markvisor, you need to replace the dummy API key in `gradle.properties` with a valid key generated from Google AI Studio:
@@ -28,6 +33,11 @@ to effectively highlight the product's key qualities. Additionally, suggest five
 ```
 
 Note that `$tone` is a placeholder that can be replaced by users directly in the app's UI to change the desired tone.
+
+<p align="center">
+  <img src="screenshot/03.png" alt="en demo" width="200"/>
+  <img src="screenshot/04.png" alt="tw demo" width="200"/>
+</p>
 
 ### Theme Adaptation
 
